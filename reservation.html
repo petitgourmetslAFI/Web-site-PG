@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Metas -->
+    <title>Petit Goumert</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Iconos -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+	<!-- estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+	<!-- fecha, tiempo CSS -->
+    <link rel="stylesheet" href="css/classic.css">    
+	<link rel="stylesheet" href="css/classic.date.css">    
+	<link rel="stylesheet" href="css/classic.time.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v4-shims.min.css">
+
+
+</head>
+
+<body>
+	<!-- cabeza -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/pet.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+						<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+						<li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Más</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="reservation.html">Reservación</a>
+								<a class="dropdown-item" href="gallery.html">Galería</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- fin cabeza -->
+	
+	<!-- paginas -->
+	<div class="all-page-title page-breadcrumb">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Reservación</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- paginas -->
+	
+	<!-- reservación -->
+	<div class="reservation-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Reservación</h2>
+						<p>Realiza una reserva facil y rapido en línea</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 col-xs-12">
+					<div class="contact-block">
+						<form id="contactForm">
+							<div class="row">
+								<div class="col-md-6">
+									<h3>Reservar</h3>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="input_date" class="datepicker picker__input form-control" name="date" type="text" value="" equired data-error="Introduzca una fecha">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="input_time" class="time form-control picker__input" required data-error="Introduzca la hora">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<select class="custom-select d-block form-control" id="person" required data-error="Seleciona la cantidad de persona">
+											  <option disabled selected>Cantidad de personas*</option>
+											  <option value="1">10-20</option>
+											  <option value="2">20-40</option>
+											  <option value="3">40-80</option>
+											  <option value="4">Más de 100</option>
+											</select>
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-6">
+									<h3>Detalles de contacto</h3>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required data-error="Introduzca su nombre">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="Correo" id="email" class="form-control" name="email" required data-error="Introduzca su correo electronico">
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="Teléfono" id="phone" class="form-control" name="phone" required data-error="Introduzca su número">
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="submit-button text-center">
+
+										<button class="btn btn-common" id="submit" type="submit">
+											<span class="btn-text">Reservar</span>
+											<div class="btn-fill"></div>
+										</button>
+
+										<div id="msgSubmit" class="h3 text-center hidden"></div> 
+										<div class="clearfix"></div> 
+									</div>
+								</div>
+							</div>            
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- fin reservación -->
+	
+	<!-- información -->
+	<div class="contact-imfo-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<i class="fa fa-volume-control-phone"></i>
+					<div class="overflow-hidden">
+						<h4>Teléfono</h4>
+						<p class="lead">
+							+34 987023545
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-envelope"></i>
+					<div class="overflow-hidden">
+						<h4>Correo</h4>
+						<p class="lead">
+							petitgourmetsl@gmail.com
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-map-marker"></i>
+					<div class="overflow-hidden">
+						<h4>Dirección</h4>
+						<p class="lead">
+							Pl, independencia 5, Madrid
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- fin información -->
+	
+	<!-- Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<h3>Sobre Nosotros</h3>
+					<p>Equipo apasionado por la gastronomía, la hospitalidad y la creación de experiencias memorables. Años de experiencia en cocina profesional, gestíon de eventos y atención al cliente especializado.</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Redes Sociales</h3>
+					<ul class="list-inline social-facebook">
+						<li class="list-inline-item">
+							<a href="https://www.facebook.com/profile.php?id=61583475485978&sk=about" target="_blank" rel="noopener noreferrer">
+								<i class="fab fa-facebook" aria-hidden="true"></i>
+								<span class="social-text">Facebook</span>
+							</a>
+						</li>
+					</ul>
+
+					<ul class="list-inline social-twitter">
+						<li class="list-inline-item">
+							<a href="https://x.com/PetitGourmetsl" target="_blank" rel="noopener noreferrer">
+								<i class="fab fa-x-twitter" aria-hidden="true"></i>
+								<span class="social-text">Twitter</span>
+							</a>
+						</li>
+					</ul>
+
+					<ul class="list-inline social-instagram">
+						<li class="list-inline-item">
+							<a href="https://www.instagram.com/petit.gourmetsl/?next=%2F" target="_blank" rel="noopener noreferrer">
+								<i class="fab fa-instagram" aria-hidden="true"></i>
+								<span class="social-text">Instagram</span>
+							</a>
+						</li>
+					</ul>
+
+					<ul class="list-inline social-tiktok">
+						<li class="list-inline-item">
+							<a href="https://www.tiktok.com/@petitgourmetsl?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer"> <i class="fab fa-tiktok" aria-hidden="true"></i> <span class="social-text">TikTok</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Contacto de información</h3>
+					<p class="lead"><a href="https://maps.app.goo.gl/cySQUMMJfcEiFjtSA">Pl, Independencia 5, Madrid</a></p>
+					<p class="lead"><a href="#">+34 987023545</a></p>
+					<p><a href="mailto:petitgourmetsl@gmail.com"> petitgourmetsl@gmail.com</a></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Horas de atención</h3>
+					<p><span class="text-color">Lunes: </span>Cerrado</p>
+					<p><span class="text-color">Mar-Mie :</span> 9:Am - 10PM</p>
+					<p><span class="text-color">Jue-Vie :</span> 9:Am - 10PM</p>
+					<p><span class="text-color">Sab-Dom :</span> 5:PM - 10PM</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">Todo los derechos reservados &copy; 2025 <a href="#">PETIT GOURMET S.L.</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- fin Footer -->
+
+	<a href="#" id="back-to-top" title="Volver arriba" style="display: none;"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+
+	<!-- Archivos -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- PLUGINS -->
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+    
+    <script src="js/picker.js"></script>
+	<script src="js/picker.date.js"></script>
+	<script src="js/picker.time.js"></script>
+	<script src="js/legacy.js"></script>
+    
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
